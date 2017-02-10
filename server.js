@@ -4,6 +4,9 @@ var express = require('express');
 var app = express(); 
 var bodyParser = require('body-parser');
 
+var mode = 'local';
+var config = require('./config')(mode);
+
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
@@ -27,5 +30,7 @@ require('./routes')(app);
 //app.use('/api', require('./routes'));
 
 
-app.listen(port);
-console.log('Server is now active on port ' + port);
+app.listen(config.port, function() {
+   console.log('Server is now active on port ' + config.port);	
+});
+
