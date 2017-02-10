@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/scloo/express_restful_api#readme",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "body-parser": "^1.16.0",
     "express": "^4.14.1",
     "mongodb": "^2.2.22",
-    "mongoose": "^4.8.1"
+    "mongoose": "^4.8.1",
+    "node-require-directory": "^1.0.2"
   }
 }
