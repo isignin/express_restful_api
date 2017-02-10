@@ -15,7 +15,7 @@ var dbUrl = 'mongodb://localhost:27017/member'
 mongoose.connect(dbUrl);
 mongoose.Promise = require('bluebird');
 
-var Member = require('./app/models/member');
+var Member = require('./models/member');
 
 
 //ROUTES FOR API

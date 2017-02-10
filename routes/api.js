@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-var Member = require('../app/models/member');
+var Member = require('../models/member');
 
 //Middleware that is specific to this router
 router.use(function(req,res,next){
